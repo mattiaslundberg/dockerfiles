@@ -5,7 +5,7 @@ if [ ! -c /dev/net/tun ]; then
 	mknod /dev/net/tun c 10 200
 fi
 
-# TODO: Block connections before started connection
+/etc/openvpn/down.sh
 openvpn /etc/openvpn/clientconf.ovpn &
 
 rm -f /data/deluged.pid
