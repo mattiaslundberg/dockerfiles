@@ -8,7 +8,7 @@ script called down.sh to lock all outgoing communication before a connection
 is established.
 
 Deluge reads configuration from /data and doesn't expect any files present on
-first run.
+first run. Don't forget to allow remote connections in the config.
 
 Building
 --------
