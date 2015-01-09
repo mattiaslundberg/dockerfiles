@@ -9,6 +9,7 @@ RUN apt-get update && \
 
 VOLUME ["/etc/openvpn"]
 VOLUME ["/data"]
+VOLUME ["/downloads"]
 
 # Torrent port
 EXPOSE 53160

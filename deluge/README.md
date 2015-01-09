@@ -21,5 +21,6 @@ Running
 NOTE: Adding NET-ADMIN is generally considered unsafe but is needed for openvpn.
 ```
 docker run -d --cap-add=NET-ADMIN -v /path/to/openvpn/config:/etc/openvpn \\
-		-v /path/to/deluge/config:/data --name=deluge mattiaslundberg/deluge
+		-v /path/to/deluge/config:/data -b /path/to/downloads:/downloads \\
+		--name=deluge mattiaslundberg/deluge
 ```
