@@ -14,6 +14,7 @@ docker build --rm -t mattiaslundberg/flexget .
 
 Running
 -------
+```
 docker run -d -v /path/to/flexget/config:/var/lib/flexget \\
 		--link deluge:deluge mattiaslundberg/flexget
 ```
