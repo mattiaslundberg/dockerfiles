@@ -11,6 +11,6 @@ RUN mkdir -p /var/lib/flexget touch /var/lib/flexget/config.yml
 
 VOLUME ["/var/lib/flexget"]
 
-ENTRYPOINT ["/usr/local/bin/flexget", "--loglevel", "warning", "-c", "/var/lib/flexget/config.yml"]
+ENTRYPOINT ["/usr/local/bin/flexget", "--loglevel", "verbose", "-c", "/var/lib/flexget/config.yml"]
 
 CMD ["daemon", "start"]
